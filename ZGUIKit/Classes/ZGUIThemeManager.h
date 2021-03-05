@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define ThemeManager \
 [ZGUIThemeManager sharedInstance]
+#define CurrentTheme \
+ThemeManager.currentTheme
 
 extern NSNotificationName const ZGGUIThemeDidChangeNotification;
 

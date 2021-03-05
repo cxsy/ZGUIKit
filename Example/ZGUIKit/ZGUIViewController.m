@@ -8,7 +8,9 @@
 
 #import "ZGUIViewController.h"
 #import <ZGUIKit/ZGUIThemeManager.h>
-#import <ZGUIKit/UIColor+ZGUITheme.h>
+#import <ZGUIKit/UIView+ZGUITheme.h>
+#import <ZGUIKit/UILabel+ZGUITheme.h>
+#import <ZGUIKit/ZGUIColorPicker.h>
 #import <Masonry/Masonry.h>
 
 @interface ZGUIViewController ()
@@ -29,11 +31,6 @@
     [super viewDidLoad];
     
     [self setupUI];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(onThemeDidChange)
-                                                 name:ZGGUIThemeDidChangeNotification
-                                               object:nil];
 }
 
 - (void)setupBaseUI {
@@ -67,10 +64,10 @@
 - (void)setupUI {
     [self setupBaseUI];
     
-    self.view.backgroundColor = [UIColor zgui_brandColor];
+    self.view.zgui_backgroundColorPicker = BrandColorPicker;
     
     _label = [[UILabel alloc] init];
-    _label.textColor = [UIColor zgui_text1Color];
+    _label.zgui_textColorPicker = Text1ColorPicker;
     _label.font = [UIFont systemFontOfSize:16.f];
     _label.text = @"文案";
     [self.stackView addArrangedSubview:_label];
@@ -113,11 +110,6 @@
 
 - (void)onChangeToRedTheme {
     [ThemeManager switchTheme:ZGUIThemeRed];
-}
-
-- (void)onThemeDidChange {
-    self.view.backgroundColor = [UIColor zgui_brandColor];
-    _label.textColor = [UIColor zgui_text1Color];
 }
 
 @end

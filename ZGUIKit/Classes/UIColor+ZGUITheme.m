@@ -47,32 +47,6 @@ static BOOL hexStrToRGBA(NSString *str,
 
 @implementation UIColor (ZGUITheme)
 
-+ (instancetype)zgui_brandColor {
-    ZGUITheme theme = ThemeManager.currentTheme;
-    switch (theme) {
-        case ZGUIThemeDark:
-            return [UIColor zgui_colorWithRGBAHexString:@"#A3C5FF"];
-        case ZGUIThemeRed:
-            return [UIColor zgui_colorWithRGBAHexString:@"#FF860D"];
-        case ZGUIThemeLight:
-        default:
-            return [UIColor zgui_colorWithRGBAHexString:@"#1966FF"];
-    }
-}
-
-+ (instancetype)zgui_text1Color {
-    ZGUITheme theme = ThemeManager.currentTheme;
-    switch (theme) {
-        case ZGUIThemeDark:
-            return [UIColor zgui_colorWithRGBAHexString:@"#FFFFFF"];
-        case ZGUIThemeRed:
-            return [UIColor zgui_colorWithRGBAHexString:@"#FFEEDE"];
-        case ZGUIThemeLight:
-        default:
-            return [UIColor zgui_colorWithRGBAHexString:@"#25292E"];
-    }
-}
-
 + (UIColor *)zgui_colorWithRGBAHexString:(NSString *)hexStr {
     CGFloat r, g, b, a;
     if (hexStrToRGBA(hexStr, &r, &g, &b, &a)) {

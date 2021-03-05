@@ -11,10 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (ZGUITheme)
 
-+ (instancetype)zgui_brandColor;
-
-+ (instancetype)zgui_text1Color;
-
 + (instancetype)zgui_colorWithRGBAHexString:(NSString *)hexStr;
 
 @end
