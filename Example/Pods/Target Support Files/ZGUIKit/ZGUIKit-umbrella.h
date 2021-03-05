@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSString+ZGUI.h"
 
 FOUNDATION_EXPORT double ZGUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZGUIKitVersionString[];

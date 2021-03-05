@@ -22,8 +22,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		88E251A9EC15C3D8BDC22CCC /* Pods_ZGUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CBD04454898C36693792369 /* Pods_ZGUIKit_Example.framework */; };
-		AED9363A67209B41A1492789 /* Pods_ZGUIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FE11A438BE75523668A5C7 /* Pods_ZGUIKit_Tests.framework */; };
+		95B35156DD2221AF95BB5FEC /* libPods-ZGUIKit_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190E04677E87565D9AC1F233 /* libPods-ZGUIKit_Example.a */; };
+		A1B910A84928AB395D2FF894 /* libPods-ZGUIKit_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D00C607B10676077ED1D4C /* libPods-ZGUIKit_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CBD04454898C36693792369 /* Pods_ZGUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZGUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03D00C607B10676077ED1D4C /* libPods-ZGUIKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGUIKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		190E04677E87565D9AC1F233 /* libPods-ZGUIKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGUIKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A88ACA2C1F6E1BC01414772 /* Pods-ZGUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		30FE11A438BE75523668A5C7 /* Pods_ZGUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZGUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ZGUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -59,14 +59,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6317863D77E8B4A70FAF68C0 /* ZGUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZGUIKit.podspec; path = ../ZGUIKit.podspec; sourceTree = "<group>"; };
+		6317863D77E8B4A70FAF68C0 /* ZGUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZGUIKit.podspec; path = ../ZGUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7CFC51B0C5CD71CA11C6956 /* Pods-ZGUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGUIKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C18C52EA2A7A63A838E0CA83 /* Pods-ZGUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGUIKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E72772C5BDE09BDDFDC60C88 /* Pods-ZGUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGUIKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F8C75F9E333AE54E42DDCCC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FE09BF7B29D4B820A7D6E343 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F8C75F9E333AE54E42DDCCC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FE09BF7B29D4B820A7D6E343 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				88E251A9EC15C3D8BDC22CCC /* Pods_ZGUIKit_Example.framework in Frameworks */,
+				95B35156DD2221AF95BB5FEC /* libPods-ZGUIKit_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				AED9363A67209B41A1492789 /* Pods_ZGUIKit_Tests.framework in Frameworks */,
+				A1B910A84928AB395D2FF894 /* libPods-ZGUIKit_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				0CBD04454898C36693792369 /* Pods_ZGUIKit_Example.framework */,
-				30FE11A438BE75523668A5C7 /* Pods_ZGUIKit_Tests.framework */,
+				190E04677E87565D9AC1F233 /* libPods-ZGUIKit_Example.a */,
+				03D00C607B10676077ED1D4C /* libPods-ZGUIKit_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -193,7 +193,6 @@
 				C18C52EA2A7A63A838E0CA83 /* Pods-ZGUIKit_Tests.debug.xcconfig */,
 				E72772C5BDE09BDDFDC60C88 /* Pods-ZGUIKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				6981BFCB6E7A319AF7F00AE3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,24 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6981BFCB6E7A319AF7F00AE3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZGUIKit/ZGUIKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZGUIKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		76E6AB3EC0A4812C5C50857C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

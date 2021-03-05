@@ -1,9 +1,8 @@
-use_frameworks!
-
 platform :ios, '9.0'
 
 target 'ZGUIKit_Example' do
   pod 'ZGUIKit', :path => '../'
+  pod 'Masonry'
 
   target 'ZGUIKit_Tests' do
     inherit! :search_paths

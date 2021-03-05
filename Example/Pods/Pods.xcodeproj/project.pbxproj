@@ -7,246 +7,363 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19C04FE3649146CADF16ADA7C196A896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		39AA82289706F79117DE8E0B4E2BB2E7 /* ZGUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E61DA13F86E33E9B1F6005DF51CBA86E /* ZGUIKit-dummy.m */; };
-		40E53016E809F4B081069E0E431FF2DC /* ZGUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81386C0C93CD529E68ABC3878732E32F /* ZGUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AD754EFA7179DAA4132D26B2B276B9F /* Pods-ZGUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74E0E5801E41937FFA3C01BDC3E4EC98 /* Pods-ZGUIKit_Example-dummy.m */; };
-		4E8090307E5BC4FE854455FD0906EEF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		67C63599E63E630B7C4035BE8D239B36 /* Pods-ZGUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0393F9834E739DA347E8844003638B3 /* Pods-ZGUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EECD7C0629F731E70B96D1609A6C616 /* Pods-ZGUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59E244EFEB9CA4178B39074EE00FDECC /* Pods-ZGUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B190E88FB870C34C08BC7E19A2E9CEEC /* Pods-ZGUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1E77FFADE95760340992E99DAF0A12 /* Pods-ZGUIKit_Tests-dummy.m */; };
-		D7070DD39AB8287A3F4F7832CE27241F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = FF32D9A49B1927E7F3E2C3B6472489C5 /* ReplaceMe.m */; };
-		E58F850BB9F998FEA7FD551C0BEBAC22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */; };
+		0DE1E643298B14ED03D72E9432742F99 /* Pods-ZGUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0ECDFD4B95B1E4BF1AF1B1F491B204 /* Pods-ZGUIKit_Tests-dummy.m */; };
+		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */; };
+		2C5FD284D1985CF42F6EA388EBBCB0DB /* ZGUIThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A71997F0BA806AE4E7A159E3E6E648E3 /* ZGUIThemeManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */; };
+		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */; };
+		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E413441CBE9573F91AB4515D72AD1DB /* ZGUIThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD75349A76E15C1229B6169525E32E02 /* ZGUIThemeManager.m */; };
+		81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8A9FEAAFFEE294CB1D8325FF68059D0E /* UIColor+ZGUITheme.h in Headers */ = {isa = PBXBuildFile; fileRef = DA51A41ED239EF98AE5E6DA84876AFAD /* UIColor+ZGUITheme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		971A3792B3B2D511F0B520443D29E217 /* ZGUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C123403DE731D90FD8CE35ECACF5A9E /* ZGUIKit-dummy.m */; };
+		A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */; };
+		B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */; };
+		C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */; };
+		C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */; };
+		D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */; };
+		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDE2E40FCB8ECA20C72C689F04A06DC9 /* Pods-ZGUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C9297739DEDF4B395D316ECA312348 /* Pods-ZGUIKit_Example-dummy.m */; };
+		EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */; };
+		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7F87617E2DC1E446422B8897F8B1401 /* UIColor+ZGUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 8623070FD1F9DB6BB6958108A45B19DF /* UIColor+ZGUITheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31C6634714DB20EDA5E0CAA75EFDDFC0 /* PBXContainerItemProxy */ = {
+		5FDA50CAC1E2C5D186497CF970AC70A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1F6C36726E2F6A80605EBF9B7ED86FD0;
 			remoteInfo = ZGUIKit;
 		};
-		C60D4130B6C9025F5F9F3B2957797371 /* PBXContainerItemProxy */ = {
+		8636C731388C435BDFC1F7AA0A1786B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F3CB82C2EDE253BD3FFB2B2A338CF7AA;
 			remoteInfo = "Pods-ZGUIKit_Example";
 		};
+		FD549249AEF89FC3B702EC2A0E1CFE1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16B155778A7FA6E342CC57AB67C51AEE /* Pods-ZGUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A151C163968137EF8F2E768427FE6D4 /* Pods-ZGUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZGUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1DFA33D54CE309711200A148E8B7BB4F /* ZGUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZGUIKit.debug.xcconfig; sourceTree = "<group>"; };
-		27E2AEEA7C3AD87CC6B458416012EDA2 /* Pods-ZGUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37358F03405D6104B6ED818FFB841E83 /* ZGUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZGUIKit-prefix.pch"; sourceTree = "<group>"; };
-		47E5CAF6C1D0F538173A085AA709A16D /* Pods-ZGUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		487D9C5797DB89399C45442FD8EE9437 /* ZGUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZGUIKit-Info.plist"; sourceTree = "<group>"; };
-		4E6D1073759309C6D6D221232835E070 /* Pods-ZGUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		59E244EFEB9CA4178B39074EE00FDECC /* Pods-ZGUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZGUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		68CBE9B46A6A2933BCAEC4E9807852DD /* Pods-ZGUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		742FAF553D02BF0E838F81AD429C72BB /* ZGUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZGUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		74E0E5801E41937FFA3C01BDC3E4EC98 /* Pods-ZGUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZGUIKit_Example-dummy.m"; sourceTree = "<group>"; };
-		81386C0C93CD529E68ABC3878732E32F /* ZGUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZGUIKit-umbrella.h"; sourceTree = "<group>"; };
-		8B385921A05A6DBB4D51DC4E76206EFF /* Pods-ZGUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Example-Info.plist"; sourceTree = "<group>"; };
+		0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		151F64AD83DC94DEFD2A1867E0AE0425 /* Pods-ZGUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		263B54C87AB1160D9BE39C957CAF7C40 /* Pods-ZGUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		392D7C3EF654B05885F59702768C787F /* Pods-ZGUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZGUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FF54A7EB38EFD779353FD031A071544 /* Pods-ZGUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		46B216349DE876609D9144168F645B42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		6554D15CD0B062BB6722FC1113ABD910 /* Pods-ZGUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B0ECDFD4B95B1E4BF1AF1B1F491B204 /* Pods-ZGUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZGUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		6C076C52A31E294978612E13EDD438EC /* ZGUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZGUIKit.debug.xcconfig; sourceTree = "<group>"; };
+		6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		7C8B9DC06A9D7088A84FA8C1F33F8AA1 /* Pods-ZGUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		8623070FD1F9DB6BB6958108A45B19DF /* UIColor+ZGUITheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ZGUITheme.m"; path = "ZGUIKit/Classes/UIColor+ZGUITheme.m"; sourceTree = "<group>"; };
+		8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		91F10A7E4BAA437E4DF7B3CED9B560B4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		9C123403DE731D90FD8CE35ECACF5A9E /* ZGUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZGUIKit-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A15A7A3D6B94D60046AC3F3E324EA942 /* Pods-ZGUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZGUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AFBDD270CDFDF54D4EDA689B11ECDBC1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B0393F9834E739DA347E8844003638B3 /* Pods-ZGUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZGUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		B26547E7DA816300862D6F121A0D2CAC /* ZGUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZGUIKit.framework; path = ZGUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5E9BB0C2401838D8E318E884D83EF62 /* Pods-ZGUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		C9836E3D076CBB8B7C3D7D73812C3E36 /* Pods-ZGUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZGUIKit_Tests.modulemap"; sourceTree = "<group>"; };
-		D2F380196406976AA7BED7F18948F22F /* Pods_ZGUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZGUIKit_Tests.framework; path = "Pods-ZGUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3860146224A9A793BA061BF4894116F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E173A507849E13C436E02316040DE93D /* Pods-ZGUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZGUIKit_Example.modulemap"; sourceTree = "<group>"; };
-		E55371719AEC815734646F3017DBD9C3 /* ZGUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZGUIKit.modulemap; sourceTree = "<group>"; };
-		E61DA13F86E33E9B1F6005DF51CBA86E /* ZGUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZGUIKit-dummy.m"; sourceTree = "<group>"; };
-		E68D699AC227E9D5173811EB11BB2192 /* Pods_ZGUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZGUIKit_Example.framework; path = "Pods-ZGUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC1E77FFADE95760340992E99DAF0A12 /* Pods-ZGUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZGUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		F07B2EA4A5DFB8E96C0E7F2E37D945B8 /* Pods-ZGUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZGUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F0FAE2D61441D72B888F375CB17D4A88 /* ZGUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZGUIKit.release.xcconfig; sourceTree = "<group>"; };
-		F54FB8EBA3D0F792D56D76F0C8EB767F /* Pods-ZGUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZGUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF32D9A49B1927E7F3E2C3B6472489C5 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ZGUIKit/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		A71997F0BA806AE4E7A159E3E6E648E3 /* ZGUIThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZGUIThemeManager.h; path = ZGUIKit/Classes/ZGUIThemeManager.h; sourceTree = "<group>"; };
+		A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		AD75349A76E15C1229B6169525E32E02 /* ZGUIThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZGUIThemeManager.m; path = ZGUIKit/Classes/ZGUIThemeManager.m; sourceTree = "<group>"; };
+		B26547E7DA816300862D6F121A0D2CAC /* libZGUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZGUIKit.a; path = libZGUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2C9297739DEDF4B395D316ECA312348 /* Pods-ZGUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZGUIKit_Example-dummy.m"; sourceTree = "<group>"; };
+		C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		CED1A845A8AC1434A123CACD44B51A81 /* ZGUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZGUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D24ACB22697E08A09F836069E48E7A92 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D2B4827455432EC027BF9C3568DE7CA9 /* Pods-ZGUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZGUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D2F380196406976AA7BED7F18948F22F /* libPods-ZGUIKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZGUIKit_Tests.a"; path = "libPods-ZGUIKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		D9E957BAAE582FADFD2A7D739662253B /* ZGUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZGUIKit.release.xcconfig; sourceTree = "<group>"; };
+		DA51A41ED239EF98AE5E6DA84876AFAD /* UIColor+ZGUITheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ZGUITheme.h"; path = "ZGUIKit/Classes/UIColor+ZGUITheme.h"; sourceTree = "<group>"; };
+		E68D699AC227E9D5173811EB11BB2192 /* libPods-ZGUIKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZGUIKit_Example.a"; path = "libPods-ZGUIKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DD9693DF9B416BEDC0C2E1CB12D947 /* ZGUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZGUIKit-prefix.pch"; sourceTree = "<group>"; };
+		F768D814EEC32C0AEFCE32384403161C /* Pods-ZGUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZGUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		060AA98D460A633CB5433EE5720D0AAE /* Frameworks */ = {
+		01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58F850BB9F998FEA7FD551C0BEBAC22 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25555253297E29732EA5DC77DBC7900D /* Frameworks */ = {
+		4FAFD345344C1B72CF871D0A1A8FEE3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E8090307E5BC4FE854455FD0906EEF0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6190CCC4561F070A7EFF5D604F79AEC /* Frameworks */ = {
+		6F8C084D59EBE4AA460259206465797B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19C04FE3649146CADF16ADA7C196A896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892637C033ADB270C9D429F7BD6D7C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		185D34CE4AC9E81E44A764E8C526CBE8 /* Targets Support Files */ = {
+		1AF60AABC6221620FD106CE4F67777BA /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				940F9307E274F4FF2D6BB01F36B627C6 /* Pods-ZGUIKit_Example */,
-				3E05D296CD55D73493B6083604F49111 /* Pods-ZGUIKit_Tests */,
+				7F2AD2A9DC6BB9FD27BAEFB7C6C10930 /* Pods-ZGUIKit_Example */,
+				84CE17DF4431CAF73B519581E327E0AA /* Pods-ZGUIKit_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		1F3FF5EE4784827A6A2A38332975682C /* Products */ = {
+		4357C9F6652A94DC2CBCC1A30010EE33 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E68D699AC227E9D5173811EB11BB2192 /* Pods_ZGUIKit_Example.framework */,
-				D2F380196406976AA7BED7F18948F22F /* Pods_ZGUIKit_Tests.framework */,
-				B26547E7DA816300862D6F121A0D2CAC /* ZGUIKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3E05D296CD55D73493B6083604F49111 /* Pods-ZGUIKit_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C9836E3D076CBB8B7C3D7D73812C3E36 /* Pods-ZGUIKit_Tests.modulemap */,
-				1A151C163968137EF8F2E768427FE6D4 /* Pods-ZGUIKit_Tests-acknowledgements.markdown */,
-				27E2AEEA7C3AD87CC6B458416012EDA2 /* Pods-ZGUIKit_Tests-acknowledgements.plist */,
-				EC1E77FFADE95760340992E99DAF0A12 /* Pods-ZGUIKit_Tests-dummy.m */,
-				B5E9BB0C2401838D8E318E884D83EF62 /* Pods-ZGUIKit_Tests-Info.plist */,
-				B0393F9834E739DA347E8844003638B3 /* Pods-ZGUIKit_Tests-umbrella.h */,
-				16B155778A7FA6E342CC57AB67C51AEE /* Pods-ZGUIKit_Tests.debug.xcconfig */,
-				68CBE9B46A6A2933BCAEC4E9807852DD /* Pods-ZGUIKit_Tests.release.xcconfig */,
-			);
-			name = "Pods-ZGUIKit_Tests";
-			path = "Target Support Files/Pods-ZGUIKit_Tests";
-			sourceTree = "<group>";
-		};
-		4BCC2ECBE8061CCFDEAEE149953D0935 /* ZGUIKit */ = {
-			isa = PBXGroup;
-			children = (
-				FF32D9A49B1927E7F3E2C3B6472489C5 /* ReplaceMe.m */,
-				88B5F0D7E5E3A9C25DF24464280C5F73 /* Pod */,
-				67BBCA4A509875C492C0B66936798EE1 /* Support Files */,
-			);
-			name = ZGUIKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		67BBCA4A509875C492C0B66936798EE1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E55371719AEC815734646F3017DBD9C3 /* ZGUIKit.modulemap */,
-				E61DA13F86E33E9B1F6005DF51CBA86E /* ZGUIKit-dummy.m */,
-				487D9C5797DB89399C45442FD8EE9437 /* ZGUIKit-Info.plist */,
-				37358F03405D6104B6ED818FFB841E83 /* ZGUIKit-prefix.pch */,
-				81386C0C93CD529E68ABC3878732E32F /* ZGUIKit-umbrella.h */,
-				1DFA33D54CE309711200A148E8B7BB4F /* ZGUIKit.debug.xcconfig */,
-				F0FAE2D61441D72B888F375CB17D4A88 /* ZGUIKit.release.xcconfig */,
+				16AEBAAA2225352CFA3BA703D5C21510 /* Masonry-dummy.m */,
+				91F10A7E4BAA437E4DF7B3CED9B560B4 /* Masonry-prefix.pch */,
+				72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */,
+				44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZGUIKit";
+			path = "../Target Support Files/Masonry";
 			sourceTree = "<group>";
 		};
-		88B5F0D7E5E3A9C25DF24464280C5F73 /* Pod */ = {
+		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AFBDD270CDFDF54D4EDA689B11ECDBC1 /* LICENSE */,
-				D3860146224A9A793BA061BF4894116F /* README.md */,
-				742FAF553D02BF0E838F81AD429C72BB /* ZGUIKit.podspec */,
+				F47FDAAE8298DEBC98D156CFA4146C99 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B5239DD28990D57A6D5065D3DCFAF06 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				D24ACB22697E08A09F836069E48E7A92 /* LICENSE */,
+				46B216349DE876609D9144168F645B42 /* README.md */,
+				CED1A845A8AC1434A123CACD44B51A81 /* ZGUIKit.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		940F9307E274F4FF2D6BB01F36B627C6 /* Pods-ZGUIKit_Example */ = {
+		7F2AD2A9DC6BB9FD27BAEFB7C6C10930 /* Pods-ZGUIKit_Example */ = {
 			isa = PBXGroup;
 			children = (
-				E173A507849E13C436E02316040DE93D /* Pods-ZGUIKit_Example.modulemap */,
-				F07B2EA4A5DFB8E96C0E7F2E37D945B8 /* Pods-ZGUIKit_Example-acknowledgements.markdown */,
-				F54FB8EBA3D0F792D56D76F0C8EB767F /* Pods-ZGUIKit_Example-acknowledgements.plist */,
-				74E0E5801E41937FFA3C01BDC3E4EC98 /* Pods-ZGUIKit_Example-dummy.m */,
-				A15A7A3D6B94D60046AC3F3E324EA942 /* Pods-ZGUIKit_Example-frameworks.sh */,
-				8B385921A05A6DBB4D51DC4E76206EFF /* Pods-ZGUIKit_Example-Info.plist */,
-				59E244EFEB9CA4178B39074EE00FDECC /* Pods-ZGUIKit_Example-umbrella.h */,
-				4E6D1073759309C6D6D221232835E070 /* Pods-ZGUIKit_Example.debug.xcconfig */,
-				47E5CAF6C1D0F538173A085AA709A16D /* Pods-ZGUIKit_Example.release.xcconfig */,
+				F768D814EEC32C0AEFCE32384403161C /* Pods-ZGUIKit_Example-acknowledgements.markdown */,
+				6554D15CD0B062BB6722FC1113ABD910 /* Pods-ZGUIKit_Example-acknowledgements.plist */,
+				C2C9297739DEDF4B395D316ECA312348 /* Pods-ZGUIKit_Example-dummy.m */,
+				D2B4827455432EC027BF9C3568DE7CA9 /* Pods-ZGUIKit_Example.debug.xcconfig */,
+				151F64AD83DC94DEFD2A1867E0AE0425 /* Pods-ZGUIKit_Example.release.xcconfig */,
 			);
 			name = "Pods-ZGUIKit_Example";
 			path = "Target Support Files/Pods-ZGUIKit_Example";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		84CE17DF4431CAF73B519581E327E0AA /* Pods-ZGUIKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				392D7C3EF654B05885F59702768C787F /* Pods-ZGUIKit_Tests-acknowledgements.markdown */,
+				3FF54A7EB38EFD779353FD031A071544 /* Pods-ZGUIKit_Tests-acknowledgements.plist */,
+				6B0ECDFD4B95B1E4BF1AF1B1F491B204 /* Pods-ZGUIKit_Tests-dummy.m */,
+				263B54C87AB1160D9BE39C957CAF7C40 /* Pods-ZGUIKit_Tests.debug.xcconfig */,
+				7C8B9DC06A9D7088A84FA8C1F33F8AA1 /* Pods-ZGUIKit_Tests.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-ZGUIKit_Tests";
+			path = "Target Support Files/Pods-ZGUIKit_Tests";
 			sourceTree = "<group>";
 		};
-		C24C48B42AB3426D7EE2A858FFC51D5A /* Development Pods */ = {
+		8BA90546880B52F099118E6B600D01A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BCC2ECBE8061CCFDEAEE149953D0935 /* ZGUIKit */,
+				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
+				E68D699AC227E9D5173811EB11BB2192 /* libPods-ZGUIKit_Example.a */,
+				D2F380196406976AA7BED7F18948F22F /* libPods-ZGUIKit_Tests.a */,
+				B26547E7DA816300862D6F121A0D2CAC /* libZGUIKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0B168133ADE455717B450B0319C15D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C04762545EECD5F3C5A4C3DDE59773C3 /* ZGUIKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C04762545EECD5F3C5A4C3DDE59773C3 /* ZGUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA51A41ED239EF98AE5E6DA84876AFAD /* UIColor+ZGUITheme.h */,
+				8623070FD1F9DB6BB6958108A45B19DF /* UIColor+ZGUITheme.m */,
+				A71997F0BA806AE4E7A159E3E6E648E3 /* ZGUIThemeManager.h */,
+				AD75349A76E15C1229B6169525E32E02 /* ZGUIThemeManager.m */,
+				7B5239DD28990D57A6D5065D3DCFAF06 /* Pod */,
+				CAEB5210B03E43462D9420ACBEFA8ECA /* Support Files */,
+			);
+			name = ZGUIKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CAEB5210B03E43462D9420ACBEFA8ECA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C123403DE731D90FD8CE35ECACF5A9E /* ZGUIKit-dummy.m */,
+				F3DD9693DF9B416BEDC0C2E1CB12D947 /* ZGUIKit-prefix.pch */,
+				6C076C52A31E294978612E13EDD438EC /* ZGUIKit.debug.xcconfig */,
+				D9E957BAAE582FADFD2A7D739662253B /* ZGUIKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZGUIKit";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C24C48B42AB3426D7EE2A858FFC51D5A /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1F3FF5EE4784827A6A2A38332975682C /* Products */,
-				185D34CE4AC9E81E44A764E8C526CBE8 /* Targets Support Files */,
+				9B0B168133ADE455717B450B0319C15D /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
+				8BA90546880B52F099118E6B600D01A5 /* Products */,
+				1AF60AABC6221620FD106CE4F67777BA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F47FDAAE8298DEBC98D156CFA4146C99 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				558B2763E324B8D237D904287AE7A690 /* MASCompositeConstraint.h */,
+				0D0AEA8F34CAE43AA76247FF577BAA68 /* MASCompositeConstraint.m */,
+				411CCCE6A707DDA02AF236A6F4DD8B74 /* MASConstraint.h */,
+				A301E9D7640CAAE872D2257184D64010 /* MASConstraint.m */,
+				D5BA9F847C587E22F8DD9250EDEC7CDA /* MASConstraint+Private.h */,
+				72A1A97E52C283A47BA4E8F48BC313FB /* MASConstraintMaker.h */,
+				935171CB319C057FAEE8F843F46825FE /* MASConstraintMaker.m */,
+				C8E52D0D54D9FDA8B5EE9BC43560E445 /* MASLayoutConstraint.h */,
+				AA01142B191C535B620A7D90F8B79380 /* MASLayoutConstraint.m */,
+				45892546416F43C43E8AA0E2AA27BC95 /* Masonry.h */,
+				5EFED6E52B374EE53B8B532C8A65A293 /* MASUtilities.h */,
+				49AC5D4983C8BEF841BBE185811C5FB0 /* MASViewAttribute.h */,
+				7EE1660D370806B3EFD74C49D3471C1C /* MASViewAttribute.m */,
+				A9244EA17B6E04FACE497603F0088190 /* MASViewConstraint.h */,
+				2F8160CD72114EFF3597CD4BF6F7F1F7 /* MASViewConstraint.m */,
+				8967E66A2FCB5BA81BFA1E139139A237 /* NSArray+MASAdditions.h */,
+				6FBB3725D2C0052C8143BF229622340A /* NSArray+MASAdditions.m */,
+				C5C44599FE7C1C51F94F910C9C3E7827 /* NSArray+MASShorthandAdditions.h */,
+				AA56AA7AF365E444271F9F4BE178D5A0 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				5DB032F0BEDBBDDF91030E59ACA7DC98 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				64C2B405D244ABC4F0728546D75B2D86 /* View+MASAdditions.h */,
+				587E0B8E883D6AD4B29DA2365B8C2EFA /* View+MASAdditions.m */,
+				370F325DDBF27B3EF280D0011A024B35 /* View+MASShorthandAdditions.h */,
+				8BA0898FAC44183744D557073E2F8AA5 /* ViewController+MASAdditions.h */,
+				553DA097256D24886D70E33FBA786911 /* ViewController+MASAdditions.m */,
+				4357C9F6652A94DC2CBCC1A30010EE33 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3B9C569AC5CC3715BD04EB4B10E20D42 /* Headers */ = {
+		072AAE71F40774270417838440859A74 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40E53016E809F4B081069E0E431FF2DC /* ZGUIKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6D39E7E60FE9F2A507D08992210EB828 /* Headers */ = {
+		2697A8D6B2989B073B236F7B4BF67F30 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EECD7C0629F731E70B96D1609A6C616 /* Pods-ZGUIKit_Example-umbrella.h in Headers */,
+				92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */,
+				4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */,
+				EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */,
+				9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */,
+				7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */,
+				B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */,
+				65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */,
+				42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */,
+				115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */,
+				F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */,
+				81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */,
+				C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */,
+				A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */,
+				E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C07A3493F510891A84325FCE8C551519 /* Headers */ = {
+		3F6F818F0119AB25BBE355FC9C65D2E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C63599E63E630B7C4035BE8D239B36 /* Pods-ZGUIKit_Tests-umbrella.h in Headers */,
+				8A9FEAAFFEE294CB1D8325FF68059D0E /* UIColor+ZGUITheme.h in Headers */,
+				2C5FD284D1985CF42F6EA388EBBCB0DB /* ZGUIThemeManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F814D48574528D11B09D595EB8B9DDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +372,11 @@
 /* Begin PBXNativeTarget section */
 		1F6C36726E2F6A80605EBF9B7ED86FD0 /* ZGUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBC35E04BDB182DC532D04BA6BC3948D /* Build configuration list for PBXNativeTarget "ZGUIKit" */;
+			buildConfigurationList = DA59D8489E5790D0D200B5A0DFF9AB95 /* Build configuration list for PBXNativeTarget "ZGUIKit" */;
 			buildPhases = (
-				3B9C569AC5CC3715BD04EB4B10E20D42 /* Headers */,
-				000238E73E63747A2757C29CC6CDE4C8 /* Sources */,
-				B6190CCC4561F070A7EFF5D604F79AEC /* Frameworks */,
-				5156096FBA189003E836C66CD34292DA /* Resources */,
+				3F6F818F0119AB25BBE355FC9C65D2E6 /* Headers */,
+				7E5C8E494F43160CA3C58C74A1C0750D /* Sources */,
+				892637C033ADB270C9D429F7BD6D7C09 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,46 +384,62 @@
 			);
 			name = ZGUIKit;
 			productName = ZGUIKit;
-			productReference = B26547E7DA816300862D6F121A0D2CAC /* ZGUIKit.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = B26547E7DA816300862D6F121A0D2CAC /* libZGUIKit.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		33936E2D1BAA6426959A7ACAB4F05B75 /* Pods-ZGUIKit_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C68A81A5C304BB33B920486A95C2D0A /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Tests" */;
+			buildConfigurationList = C3FB23E34EA19B31E3001951C9AC4048 /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Tests" */;
 			buildPhases = (
-				C07A3493F510891A84325FCE8C551519 /* Headers */,
-				AF613A4F18AEEB5256E59F1A7C5A8F4B /* Sources */,
-				060AA98D460A633CB5433EE5720D0AAE /* Frameworks */,
-				20D6239F175B82CE3C400B2B4AF2069F /* Resources */,
+				9F814D48574528D11B09D595EB8B9DDE /* Headers */,
+				04A5A75F1B05C07DD09FA6182F813207 /* Sources */,
+				6F8C084D59EBE4AA460259206465797B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B163D0292F6F56133C93D0AB4DEE0903 /* PBXTargetDependency */,
+				90759240DD15A09161F7C6F999397091 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZGUIKit_Tests";
 			productName = "Pods-ZGUIKit_Tests";
-			productReference = D2F380196406976AA7BED7F18948F22F /* Pods_ZGUIKit_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = D2F380196406976AA7BED7F18948F22F /* libPods-ZGUIKit_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		F3CB82C2EDE253BD3FFB2B2A338CF7AA /* Pods-ZGUIKit_Example */ = {
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1557F017B8E0D68C4DA1F14701993D9C /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Example" */;
+			buildConfigurationList = 0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				6D39E7E60FE9F2A507D08992210EB828 /* Headers */,
-				803F111CA393F523F048AE4760C1A381 /* Sources */,
-				25555253297E29732EA5DC77DBC7900D /* Frameworks */,
-				B893A18875F190ACD66B32A052DF461A /* Resources */,
+				2697A8D6B2989B073B236F7B4BF67F30 /* Headers */,
+				8C28688BF2BD730285E2F5DE30F8C021 /* Sources */,
+				01095FBE532CF5AA0855A20BDA54BF0B /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AAAB14300AB7B50C16937F4288BB06EE /* PBXTargetDependency */,
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F3CB82C2EDE253BD3FFB2B2A338CF7AA /* Pods-ZGUIKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEE6B5F19DAE7954D50A02A5A15ADA71 /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Example" */;
+			buildPhases = (
+				072AAE71F40774270417838440859A74 /* Headers */,
+				77064C6FFAE6CE3BA94E186CC0AAE6C6 /* Sources */,
+				4FAFD345344C1B72CF871D0A1A8FEE3A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6819B8340EB6C13B1F3DDE746FD0403D /* PBXTargetDependency */,
+				F296892397DD185C250BF8ABC47D90DC /* PBXTargetDependency */,
 			);
 			name = "Pods-ZGUIKit_Example";
 			productName = "Pods-ZGUIKit_Example";
-			productReference = E68D699AC227E9D5173811EB11BB2192 /* Pods_ZGUIKit_Example.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = E68D699AC227E9D5173811EB11BB2192 /* libPods-ZGUIKit_Example.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -327,10 +459,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1F3FF5EE4784827A6A2A38332975682C /* Products */;
+			productRefGroup = 8BA90546880B52F099118E6B600D01A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				F3CB82C2EDE253BD3FFB2B2A338CF7AA /* Pods-ZGUIKit_Example */,
 				33936E2D1BAA6426959A7ACAB4F05B75 /* Pods-ZGUIKit_Tests */,
 				1F6C36726E2F6A80605EBF9B7ED86FD0 /* ZGUIKit */,
@@ -338,178 +471,100 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		20D6239F175B82CE3C400B2B4AF2069F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5156096FBA189003E836C66CD34292DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B893A18875F190ACD66B32A052DF461A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		000238E73E63747A2757C29CC6CDE4C8 /* Sources */ = {
+		04A5A75F1B05C07DD09FA6182F813207 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7070DD39AB8287A3F4F7832CE27241F /* ReplaceMe.m in Sources */,
-				39AA82289706F79117DE8E0B4E2BB2E7 /* ZGUIKit-dummy.m in Sources */,
+				0DE1E643298B14ED03D72E9432742F99 /* Pods-ZGUIKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		803F111CA393F523F048AE4760C1A381 /* Sources */ = {
+		77064C6FFAE6CE3BA94E186CC0AAE6C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AD754EFA7179DAA4132D26B2B276B9F /* Pods-ZGUIKit_Example-dummy.m in Sources */,
+				EDE2E40FCB8ECA20C72C689F04A06DC9 /* Pods-ZGUIKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF613A4F18AEEB5256E59F1A7C5A8F4B /* Sources */ = {
+		7E5C8E494F43160CA3C58C74A1C0750D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B190E88FB870C34C08BC7E19A2E9CEEC /* Pods-ZGUIKit_Tests-dummy.m in Sources */,
+				F7F87617E2DC1E446422B8897F8B1401 /* UIColor+ZGUITheme.m in Sources */,
+				971A3792B3B2D511F0B520443D29E217 /* ZGUIKit-dummy.m in Sources */,
+				7E413441CBE9573F91AB4515D72AD1DB /* ZGUIThemeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C28688BF2BD730285E2F5DE30F8C021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */,
+				EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */,
+				1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */,
+				0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */,
+				D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */,
+				A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */,
+				572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */,
+				B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */,
+				59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */,
+				C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AAAB14300AB7B50C16937F4288BB06EE /* PBXTargetDependency */ = {
+		6819B8340EB6C13B1F3DDE746FD0403D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ZGUIKit;
-			target = 1F6C36726E2F6A80605EBF9B7ED86FD0 /* ZGUIKit */;
-			targetProxy = 31C6634714DB20EDA5E0CAA75EFDDFC0 /* PBXContainerItemProxy */;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = FD549249AEF89FC3B702EC2A0E1CFE1F /* PBXContainerItemProxy */;
 		};
-		B163D0292F6F56133C93D0AB4DEE0903 /* PBXTargetDependency */ = {
+		90759240DD15A09161F7C6F999397091 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-ZGUIKit_Example";
 			target = F3CB82C2EDE253BD3FFB2B2A338CF7AA /* Pods-ZGUIKit_Example */;
-			targetProxy = C60D4130B6C9025F5F9F3B2957797371 /* PBXContainerItemProxy */;
+			targetProxy = 8636C731388C435BDFC1F7AA0A1786B9 /* PBXContainerItemProxy */;
+		};
+		F296892397DD185C250BF8ABC47D90DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZGUIKit;
+			target = 1F6C36726E2F6A80605EBF9B7ED86FD0 /* ZGUIKit */;
+			targetProxy = 5FDA50CAC1E2C5D186497CF970AC70A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		7B0DAFB38979AE79431489DCC1782533 /* Release */ = {
+		1BFC9E9CE91F3603A06B955D5081C01F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47E5CAF6C1D0F538173A085AA709A16D /* Pods-ZGUIKit_Example.release.xcconfig */;
+			baseConfigurationReference = 263B54C87AB1160D9BE39C957CAF7C40 /* Pods-ZGUIKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		803F19386D0DF5843723BCDA76CDFD8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68CBE9B46A6A2933BCAEC4E9807852DD /* Pods-ZGUIKit_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		88C4FBE2800021DE23F8D11C03C69761 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0FAE2D61441D72B888F375CB17D4A88 /* ZGUIKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZGUIKit/ZGUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZGUIKit/ZGUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZGUIKit/ZGUIKit.modulemap";
-				PRODUCT_MODULE_NAME = ZGUIKit;
-				PRODUCT_NAME = ZGUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -532,66 +587,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		916E0404255105F480DC4950B7625F7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -630,111 +626,232 @@
 			};
 			name = Debug;
 		};
-		A335CAE4BAC1129F5DC24EBDAACAB4C7 /* Debug */ = {
+		3C39AADA7E01CEE0726AF7D19FAEA503 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E6D1073759309C6D6D221232835E070 /* Pods-ZGUIKit_Example.debug.xcconfig */;
+			baseConfigurationReference = D9E957BAAE582FADFD2A7D739662253B /* ZGUIKit.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B319BB5854E132F58ADAEBDAC274ACA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16B155778A7FA6E342CC57AB67C51AEE /* Pods-ZGUIKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZGUIKit_Tests/Pods-ZGUIKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E81DF1ACC0ED36180E262351C45671B7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DFA33D54CE309711200A148E8B7BB4F /* ZGUIKit.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/ZGUIKit/ZGUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZGUIKit/ZGUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZGUIKit/ZGUIKit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = ZGUIKit;
 				PRODUCT_NAME = ZGUIKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54C6294DB4F0074207F32678DF1B1018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B4827455432EC027BF9C3568DE7CA9 /* Pods-ZGUIKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58D01DCE381AF3E37B830BC21DCA6F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AEC6462659DC0098D6E58E0470E73F /* Masonry.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C9C9E50854BD639FBFF3CDAD7B087D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C8B9DC06A9D7088A84FA8C1F33F8AA1 /* Pods-ZGUIKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3E963D85AF63DF315B258F939CA6EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D98643BA30A79011275CBE433EF86F /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E48D0A38BEF7CF1082677085AEDBA2EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151F64AD83DC94DEFD2A1867E0AE0425 /* Pods-ZGUIKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDC6E5DD062FBD950A62C44B444AD5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C076C52A31E294978612E13EDD438EC /* ZGUIKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/ZGUIKit/ZGUIKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = ZGUIKit;
+				PRODUCT_NAME = ZGUIKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1557F017B8E0D68C4DA1F14701993D9C /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Example" */ = {
+		0B9F7EAACDDA564EC328F53A4AB8CF85 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A335CAE4BAC1129F5DC24EBDAACAB4C7 /* Debug */,
-				7B0DAFB38979AE79431489DCC1782533 /* Release */,
+				C3E963D85AF63DF315B258F939CA6EF3 /* Debug */,
+				58D01DCE381AF3E37B830BC21DCA6F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -742,26 +859,35 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				916E0404255105F480DC4950B7625F7A /* Debug */,
-				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C68A81A5C304BB33B920486A95C2D0A /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Tests" */ = {
+		C3FB23E34EA19B31E3001951C9AC4048 /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B319BB5854E132F58ADAEBDAC274ACA4 /* Debug */,
-				803F19386D0DF5843723BCDA76CDFD8D /* Release */,
+				1BFC9E9CE91F3603A06B955D5081C01F /* Debug */,
+				B1C9C9E50854BD639FBFF3CDAD7B087D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBC35E04BDB182DC532D04BA6BC3948D /* Build configuration list for PBXNativeTarget "ZGUIKit" */ = {
+		DA59D8489E5790D0D200B5A0DFF9AB95 /* Build configuration list for PBXNativeTarget "ZGUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E81DF1ACC0ED36180E262351C45671B7 /* Debug */,
-				88C4FBE2800021DE23F8D11C03C69761 /* Release */,
+				FDC6E5DD062FBD950A62C44B444AD5FC /* Debug */,
+				3C39AADA7E01CEE0726AF7D19FAEA503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEE6B5F19DAE7954D50A02A5A15ADA71 /* Build configuration list for PBXNativeTarget "Pods-ZGUIKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C6294DB4F0074207F32678DF1B1018 /* Debug */,
+				E48D0A38BEF7CF1082677085AEDBA2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

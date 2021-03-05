@@ -1,16 +1,23 @@
 PODS:
+  - Masonry (1.1.0)
   - ZGUIKit (0.1.0)
 
 DEPENDENCIES:
+  - Masonry
   - ZGUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
 
 EXTERNAL SOURCES:
   ZGUIKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZGUIKit: 1720d194906a93d6163f20c1a82d0f990df89ce7
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ZGUIKit: 90c5127f1ac4b02a982d8802cbb6a1a1fb09d435
 
-PODFILE CHECKSUM: 1e362d7ffaff1aa9488beadd6258ea95a156ac0c
+PODFILE CHECKSUM: ffa8ae028238b92366ab3a905c62ba279884c9f4
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

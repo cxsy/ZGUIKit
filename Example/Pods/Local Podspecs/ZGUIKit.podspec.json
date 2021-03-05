@@ -1,7 +1,7 @@
 {
   "name": "ZGUIKit",
   "version": "0.1.0",
-  "summary": "A short description of ZGUIKit.",
+  "summary": "A lightweight uikit writen by Objc",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/cxsy/ZGUIKit",
   "license": {
