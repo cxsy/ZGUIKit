@@ -9,26 +9,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define ThemeManager \
+#define ZGUITM \
 [ZGUIThemeManager sharedInstance]
-#define CurrentTheme \
-ThemeManager.currentTheme
 
 extern NSNotificationName const ZGGUIThemeDidChangeNotification;
 
-typedef NS_ENUM(NSInteger, ZGUITheme) {
-    ZGUIThemeLight      = 1,
-    ZGUIThemeDark       = 2,
-    ZGUIThemeRed        = 3,
-};
-
 @interface ZGUIThemeManager : NSObject
 
-@property (nonatomic, assign, readonly) ZGUITheme currentTheme;
+@property (nonatomic, strong) __kindof NSString *currentThemeIdentifier;
+@property (nonatomic, strong) __kindof NSObject *currentTheme;
+
+/// 获取所有主题的 identifier
+@property(nonatomic, copy, readonly, nullable) NSArray<__kindof NSObject<NSCopying> *> *themeIdentifiers;
+/// 获取所有主题的对象
+@property(nonatomic, copy, readonly, nullable) NSArray<__kindof NSObject *> *themes;
+
+- (void)addTheme:(NSObject *)theme withIdentifier:(NSString *)identifier;
 
 + (instancetype)sharedInstance;
-
-- (void)switchTheme:(ZGUITheme)theme;
 
 @end
 

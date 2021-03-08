@@ -7,12 +7,37 @@
 //
 
 #import "ZGUIAppDelegate.h"
+#import "DemoThemeManager.h"
+#import <ZGUIKit/ZGUIThemeManager.h>
+#import <ZGUIKit/UIImage+ZGUITheme.h>
+#import <ZGUIKit/UIColor+ZGUITheme.h>
 
 @implementation ZGUIAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+    NSObject<DemoThemeProtocol> *darkTheme = [DemoThemeManager generateThemeWithDictionary:@{
+        @"brandColor"   : @"#A3C5FF",
+        @"text1Color"   : @"#FFFFFF",
+        @"brandImage"   : [UIImage zgui_imageFromColor:[UIColor zgui_colorWithRGBAHexString:@"#DAE8FB"]],
+    }];
+    NSObject<DemoThemeProtocol> *lightTheme = [DemoThemeManager generateThemeWithDictionary:@{
+        @"brandColor"   : @"#1966FF",
+        @"text1Color"   : @"#25292E",
+        @"brandImage"   : [UIImage zgui_imageFromColor:[UIColor zgui_colorWithRGBAHexString:@"#A3C5FF"]],
+    }];
+    NSObject<DemoThemeProtocol> *redTheme = [DemoThemeManager generateThemeWithDictionary:@{
+        @"brandColor"   : @"#FF860D",
+        @"text1Color"   : @"#FFEEDE",
+        @"brandImage"   : [UIImage zgui_imageFromColor:[UIColor zgui_colorWithRGBAHexString:@"#FFEEDE"]],
+    }];
+    [ZGUITM addTheme:darkTheme withIdentifier:@"dark"];
+    [ZGUITM addTheme:lightTheme withIdentifier:@"light"];
+    [ZGUITM addTheme:redTheme withIdentifier:@"red"];
+    
+    [ZGUITM setCurrentTheme:darkTheme];
+    
     return YES;
 }
 

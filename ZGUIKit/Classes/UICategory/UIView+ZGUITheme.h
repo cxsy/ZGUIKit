@@ -6,13 +6,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ZGUIColorPicker.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (ZGUITheme)
 
-@property (nonatomic, strong, setter = zgui_setBackgroundColorPicker:) ZGUIColorPicker *zgui_backgroundColorPicker;
+- (void)zgui_themeDidChangeShouldEnumeratorSubviews:(BOOL)shouldEnumeratorSubviews;
+
+- (void)zgui_onThemeDidChange;
 
 @end
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6BB9AD25F8C33000EF30E3 /* DemoThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6BB9AC25F8C33000EF30E3 /* DemoThemeManager.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,6 +41,12 @@
 		03D00C607B10676077ED1D4C /* libPods-ZGUIKit_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGUIKit_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		190E04677E87565D9AC1F233 /* libPods-ZGUIKit_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGUIKit_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A88ACA2C1F6E1BC01414772 /* Pods-ZGUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGUIKit_Example.release.xcconfig"; path = "Target Support Files/Pods-ZGUIKit_Example/Pods-ZGUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2B6BB99F25F8C05B00EF30E3 /* DemoColorDark.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoColorDark.plist; sourceTree = "<group>"; };
+		2B6BB9A025F8C05B00EF30E3 /* DemoColorLight.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoColorLight.plist; sourceTree = "<group>"; };
+		2B6BB9A125F8C05B00EF30E3 /* DemoColorRed.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DemoColorRed.plist; sourceTree = "<group>"; };
+		2B6BB9AB25F8C33000EF30E3 /* DemoThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoThemeManager.h; sourceTree = "<group>"; };
+		2B6BB9AC25F8C33000EF30E3 /* DemoThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoThemeManager.m; sourceTree = "<group>"; };
+		2B6BB9B825F8C3E200EF30E3 /* DemoThemeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoThemeProtocol.h; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZGUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +102,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B6BB98625F8BF2700EF30E3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2B6BB9AB25F8C33000EF30E3 /* DemoThemeManager.h */,
+				2B6BB9AC25F8C33000EF30E3 /* DemoThemeManager.m */,
+				2B6BB9B825F8C3E200EF30E3 /* DemoThemeProtocol.h */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		2B6BB9A225F8C05B00EF30E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2B6BB99F25F8C05B00EF30E3 /* DemoColorDark.plist */,
+				2B6BB9A025F8C05B00EF30E3 /* DemoColorLight.plist */,
+				2B6BB9A125F8C05B00EF30E3 /* DemoColorRed.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +164,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZGUIViewController.h */,
 				6003F5A6195388D20070C39A /* ZGUIViewController.m */,
+				2B6BB9A225F8C05B00EF30E3 /* Resources */,
+				2B6BB98625F8BF2700EF30E3 /* Manager */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -347,6 +376,7 @@
 			files = (
 				6003F59E195388D20070C39A /* ZGUIAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZGUIViewController.m in Sources */,
+				2B6BB9AD25F8C33000EF30E3 /* DemoThemeManager.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

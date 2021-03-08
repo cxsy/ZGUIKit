@@ -7,18 +7,19 @@
 //
 
 #import "ZGUIViewController.h"
-#import <ZGUIKit/ZGUIThemeManager.h>
-#import <ZGUIKit/UIView+ZGUITheme.h>
-#import <ZGUIKit/UILabel+ZGUITheme.h>
-#import <ZGUIKit/ZGUIColorPicker.h>
+#import "DemoThemeManager.h"
+#import <ZGUIThemeManager.h>
 #import <Masonry/Masonry.h>
 
 @interface ZGUIViewController ()
+
+@property (nonatomic, strong) UIView *backView;
 
 @property (nonatomic, strong) UIStackView *stackView;
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIButton *changeLightBtn;
 @property (nonatomic, strong) UIButton *changeDarkBtn;
 @property (nonatomic, strong) UIButton *changeRedBtn;
@@ -34,6 +35,9 @@
 }
 
 - (void)setupBaseUI {
+    _backView = [UIView new];
+    [self.view addSubview:_backView];
+    
     _scrollView = [UIScrollView new];
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.showsHorizontalScrollIndicator = NO;
@@ -45,6 +49,10 @@
     _stackView.alignment = UIStackViewAlignmentCenter;
     _stackView.spacing = 16.f;
     [self.scrollView addSubview:_stackView];
+    
+    [_backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 
     [_scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         if (@available(iOS 11.0, *)) {
@@ -64,13 +72,17 @@
 - (void)setupUI {
     [self setupBaseUI];
     
-    self.view.zgui_backgroundColorPicker = BrandColorPicker;
+    _backView.backgroundColor = UIColor.demo_brandColor;
     
     _label = [[UILabel alloc] init];
-    _label.zgui_textColorPicker = Text1ColorPicker;
+    _label.textColor = UIColor.demo_text1Color;
     _label.font = [UIFont systemFontOfSize:16.f];
     _label.text = @"文案";
     [self.stackView addArrangedSubview:_label];
+    
+    _imageView = [[UIImageView alloc] init];
+    _imageView.image = UIImage.demo_brandImage;
+    [self.stackView addArrangedSubview:_imageView];
     
     _changeLightBtn = [[UIButton alloc] init];
     _changeLightBtn.backgroundColor = UIColor.whiteColor;
@@ -98,18 +110,26 @@
                       action:@selector(onChangeToRedTheme)
             forControlEvents:UIControlEventTouchUpInside];
     [self.stackView addArrangedSubview:_changeRedBtn];
+    
+    [_imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(64.f, 64.f));
+    }];
+}
+
+- (void)zgui_onThemeDidChange {
+    
 }
 
 - (void)onChangeToLightTheme {
-    [ThemeManager switchTheme:ZGUIThemeLight];
+    [ZGUITM setCurrentThemeIdentifier:@"light"];
 }
 
 - (void)onChangeToDarkTheme {
-    [ThemeManager switchTheme:ZGUIThemeDark];
+    [ZGUITM setCurrentThemeIdentifier:@"dark"];
 }
 
 - (void)onChangeToRedTheme {
-    [ThemeManager switchTheme:ZGUIThemeRed];
+    [ZGUITM setCurrentThemeIdentifier:@"red"];
 }
 
 @end
