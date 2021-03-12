@@ -16,7 +16,32 @@
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "NSObject+ZGUI.h"
 #import "NSMethodSignature+ZGUI.h"
+
+/// 以高级语言的方式描述一个 objc_property_t 的各种属性，请使用 `+descriptorWithProperty` 生成对象后直接读取对象的各种值。
+@interface ZGUIPropertyDescriptor : NSObject
+
+@property(nonatomic, strong) NSString *name;
+@property(nonatomic, assign) SEL getter;
+@property(nonatomic, assign) SEL setter;
+
+@property(nonatomic, assign) BOOL isAtomic;
+@property(nonatomic, assign) BOOL isNonatomic;
+
+@property(nonatomic, assign) BOOL isAssign;
+@property(nonatomic, assign) BOOL isWeak;
+@property(nonatomic, assign) BOOL isStrong;
+@property(nonatomic, assign) BOOL isCopy;
+
+@property(nonatomic, assign) BOOL isReadonly;
+@property(nonatomic, assign) BOOL isReadwrite;
+
+@property(nonatomic, copy) NSString *type;
+
++ (instancetype)descriptorWithProperty:(objc_property_t)property;
+
+@end
 
 #pragma mark - Method
 
@@ -90,7 +115,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
             result = imp;
         } else {
             // 如果 superclass 里依然没有实现，则会返回一个 objc_msgForward 从而触发消息转发的流程
-            // https://github.com/Tencent/ZGUI_iOS/issues/776
+            // https://github.com/Tencent/QMUI_iOS/issues/776
             Class superclass = class_getSuperclass(targetClass);
             result = class_getMethodImplementation(superclass, targetSelector);
         }
@@ -99,6 +124,7 @@ OverrideImplementation(Class targetClass, SEL targetSelector, id (^implementatio
         // 空 block 虽然没有参数列表，但在业务那边被转换成 IMP 后就算传多个参数进来也不会 crash
         if (!result) {
             result = imp_implementationWithBlock(^(id selfObject){
+//                ZGUILogWarn(([NSString stringWithFormat:@"%@", targetClass]), @"%@ 没有初始实现，%@\n%@", NSStringFromSelector(targetSelector), selfObject, [NSThread callStackSymbols]);
             });
         }
         
